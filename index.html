@@ -75,9 +75,9 @@ img {margin-bottom: -8px;}
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo"><b>Somewhere</b></h1>
       <h1 class="w3-xxxlarge w3-text-green"><b>Tag-base file management</b></h1>
-      <p><span class="w3-xlarge">Organize local files like never before!</span> Use tags, unlimited-length file names, non-hierararchical system to manage all your files in one place<sup>*</sup>. Make notes directly within the filesystem<sup>†</sup>, and keep everything related to each other through tags. Keep all your old folders if you want, but beware you will quickly want to drop that from your workflow! With integrated knowledge subsystem and markdown preview, this can turn your ordinary folder and isolated files into a coherent ecosystem you never even knew possible before. With non-instrusive native filesystem based approach, the speed of your access is only limited by the underlying hardware.</p>
+      <p><span class="w3-xlarge">Organize local files like never before!</span> Use tags, unlimited-length file names, non-hierararchical system to manage all your files in one place<sup>*</sup>. Make notes directly within the filesystem<sup>†</sup>, and keep everything related to each other through tags. Keep all your old folders if you want, but beware you will quickly want to drop that from your workflow! With integrated knowledge subsystem and markdown preview, this can turn your ordinary folder and isolated files into a coherent ecosystem you never even knew possible before. With non-intrusive native filesystem based approach, the speed of your access is only limited by the underlying hardware.</p>
       <p>*: It's recommended you create multiple Home folders for each specialized subject for better organization clarity, instead of actually putting all your files in one place.</p>
-      <p>†: This is achieved through deploying a dedicated SQLite database for note management.</p>
+      <p>†: This is achieved through deploying a dedicated SQLite database for note management, and allow adding meta information to arbitrary files.</p>
       <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
         <i class="fa fa-download"></i> Download Application
       </button>
@@ -121,7 +121,7 @@ img {margin-bottom: -8px;}
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo"><b>Designed to interplay</b></h1>
       <h1 class="w3-xxxlarge w3-text-red"><b>Items, who?</b></h1>
-      <p><span class="w3-xlarge">A revolution in file management.</span> Unified concept of files, folders, notes and knowledge. Every single item you love and cherish, all together. Tags in Somewhere are first-class tags, meaning they are managed and significant in themselves. When you get your items managed in a Somewhere Home, tags are defined seperated and independent from the tagged items - you have the best of both worlds, without lising integrity. Clearly documented and text-based data format enable easy interoperability with custom programs out-of-box. Develop your own front-ends with existing Somewhere.dll .Net Library. You have control over your own data.</p>
+      <p><span class="w3-xlarge">A revolution in file management.</span> Unified concept of files, folders, notes and knowledge. Every single item you love and cherish, all together. Tags in Somewhere are first-class, meaning they are managed and significant in themselves. When you get your items managed in a Somewhere Home, tags are defined separately and independently from tagged items - you have the best of both worlds, without losing integrity. Clearly documented and text-based data formats enable easy interoperation with custom programs out-of-box. Develop your own front-ends with existing SomewhereStandard.dll .Net Library. You have control over your own data.</p>
     </div>
   </div>
 </div>
@@ -146,7 +146,7 @@ img {margin-bottom: -8px;}
     </div>
     <div class="w3-col s3">
       <i class="fa fa-tags w3-text-green w3-jumbo"></i>
-      <p>Tags</p>
+      <p>Tagged</p>
     </div>
   </div>
 
@@ -184,14 +184,14 @@ img {margin-bottom: -8px;}
     </div>
     <div class="w3-col s3">
       <i class="fa fa-image w3-text-green w3-jumbo"></i>
-      <p>Image Preview</p>
+      <p>Media Previewable</p>
     </div>
   </div>
 </div>
 
 <!-- Pricing Section -->
 <div class="w3-padding-64 w3-center w3-white">
-  <h1 class="w3-jumbo"><b>Documentation is the King</b></h1>
+  <h1 class="w3-jumbo"><b>Documentation is King</b></h1>
   <p class="w3-large">Theory-backed file management with a style.</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half w3-section">
@@ -199,10 +199,11 @@ img {margin-bottom: -8px;}
         <li class="w3-dark-grey w3-xlarge w3-padding-32">Code</li>
         <li class="w3-padding-16">All source code <b>open</b></li>
         <li class="w3-padding-16"><b>SQLite</b> Based</li>
+        <li class="w3-padding-16">Modern <b>WPF</b></li>
         <li class="w3-padding-16"><b>.Net Core</b> Platform</li>
         <li class="w3-padding-16"><b>Heavily</b> Documented</li>
         <li class="w3-padding-16">
-        <h2 class="w3-opacity"><b>Free</b> forever</h2>
+            <h2 class="w3-opacity"><b>Free</b> forever</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
@@ -216,8 +217,9 @@ img {margin-bottom: -8px;}
         <li class="w3-padding-16">Absolutely <b>Self-Contained</b></li>
         <li class="w3-padding-16"><b>In-App</b> Document Preview</li>
         <li class="w3-padding-16"><b>Actively</b> Used and Maintained</li>
+        <li class="w3-padding-16">Efficient <b>Desktop</b> Workflow</li>
         <li class="w3-padding-16">
-        <h2 class="w3-opacity">Designed to <b>Last</b></h2>
+            <h2 class="w3-opacity">Designed to <b>Last</b></h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
@@ -225,6 +227,8 @@ img {margin-bottom: -8px;}
       </ul>
     </div>
   </div>
+  <br>
+  <p class="w3-large">Now available for Windows and Linux, or in source code form.</p>
   <br>
 </div>
 
