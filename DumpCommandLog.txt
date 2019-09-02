@@ -1,0 +1,128 @@
+Welcome to Somewhere, a tag-based personal file management system!
+Current working Directory: D:\Programming\Somewhere\BinaryOutput (Not a Home folder)
+Available Commands:
+File      add - Add an item to home.
+          create - Create a virtual file (virtual text note).
+          mv - Rename file.
+          rm - Remove a file from Home directory, deletes the file both physically and from database.
+Misc.     cf - Get or set configurations.
+          doc - Generate documentation of Somewhere program.
+          dump - Dump historical versions of repository.
+          help - Show available commands and general usage help. Use `help commandname` to see more.
+          ui - Run desktop version of Somewhere.
+Mgmt.     export - Export files, folders, notes and knowledge. Placeholder, not implemented yet, coming soon.
+          im - Import items, files, folders and notes.
+Display   files - Show a list of all files.
+          find - Find with (or without) action.
+          read - Read content of an item.
+          tags - Show all tags currently exist.
+Advanced  mt - Read or set meta attribtues.
+Tagging   mvt - Move Tags, renames specified tag.
+          tag - Tag a specified file.
+          untag - Untag a file.
+          update - Update or replace tags for a file completely.
+Default   new - Create a new Somewhere home at current home directory.
+          purge - Permanantly delete all the files that are marked as "_deleted"
+          status - Displays the state of the Home directory and the staging area.
+Taggging  rmt - Removes a tag.
+You are now in the interactive session,
+  enter a command to continue; Enter `exit` to quit:
+> new
+Database generated at $D:\Programming\Somewhere\BinaryOutput\Home.somewhere
+> status
+Home: D:\Programming\Somewhere\BinaryOutput\
+57 files on disk; 4 directories on disk.
+------------
+[New] AddFileShouldCutForeignFileTempFile.txt
+[New] Chinese Paladin 5.avi
+[New] Markdig.dll
+[New] Markdig.pdb
+[New] Markdig.Wpf.dll
+[New] Markdig.xml
+[New] Microsoft.WindowsAPICodePack.dll
+[New] Microsoft.WindowsAPICodePack.Shell.dll
+[New] Microsoft.WindowsAPICodePack.Shell.xml
+[New] Microsoft.WindowsAPICodePack.xml
+[New] mystate.csv
+[New] Newtonsoft.Json.dll
+[New] Recent.txt
+[New] SM.deps.json
+[New] SM.dll
+[New] SM.exe
+[New] SM.pdb
+[New] SM.runtimeconfig.json
+[New] Somewhere.deps.json
+[New] Somewhere.dll
+[New] Somewhere.exe
+[New] Somewhere.pdb
+[New] Somewhere.runtimeconfig.dev.json
+[New] Somewhere.runtimeconfig.json
+[New] SomewhereDesktop.exe
+[New] SomewhereDesktop.exe.config
+[New] SomewhereDesktop.pdb
+[New] SomewhereDoc.txt
+[New] SomewhereStandard.1.0.0.nupkg
+[New] SomewhereStandard.dll
+[New] SomewhereStandard.pdb
+[New] SomewhereTest.deps.json
+[New] SomewhereTest.dll
+[New] SomewhereTest.pdb
+[New] SomewhereTest.runtimeconfig.dev.json
+[New] SomewhereTest.runtimeconfig.json
+[New] SQLite.Interop.dll
+[New] SW
+[New] SW.deps.json
+[New] SW.dll
+[New] SW.exe
+[New] SW.pdb
+[New] SW.runtimeconfig.dev.json
+[New] SW.runtimeconfig.json
+[New] System.Data.SQLite.dll
+[New] System.Security.Permissions.dll
+[New] test.csv
+[New] test.log
+[New] test.txt
+[New] tiddlers.csv
+[New] Vlc.DotNet.Core.dll
+[New] Vlc.DotNet.Core.Interops.dll
+[New] Vlc.DotNet.Forms.dll
+[New] xunit.runner.reporters.netcoreapp10.dll
+[New] xunit.runner.utility.netcoreapp10.dll
+[New] xunit.runner.visualstudio.dotnetcore.testadapter.dll
+[New] YamlDotNet.dll
+57 new files. 0 item in database.
+> create note content tag
+Note `note` has been created with 1 tag: `tag`.
+> mv note note2
+Virtual file `note` has been renamed to `note2`.
+> mvt tag tag_new
+Tag `tag` is renamed to `tag_new`.
+> files
+ID      Add Date    Name (Alphabetical order)               Rev. Time         Rev. Cnt
+--------------------------------------------------------------------------------------
+(1)     2019-09-01  note2
+              Tags: tag_new
+Total: 1
+> rm note2
+Note `note2` has been deleted.
+> files
+ID      Add Date    Name (Alphabetical order)               Rev. Time         Rev. Cnt
+--------------------------------------------------------------------------------------
+> dump test.csv
+Repository state is dumped into D:\Programming\Somewhere\BinaryOutput\test.csv
+> read test.csv
+(`test.csv` is not managed)
+Name,Tags,Content,Remark
+> dump test.csv note
+Repository state is dumped into D:\Programming\Somewhere\BinaryOutput\test.csv
+> read test.csv
+(`test.csv` is not managed)
+Name,Tags,Content,Remark
+(Step: 1)note,,,New creation
+(Step: 2)note,,content,Content change
+(Step: 3)note,tag,content,Tag change
+(Step: 4)note2,tag,content,Name change
+(Step: 5)note2,tag_new,content,Tag change
+(Step: 6)note2,tag_new,content,Deleted
+>
+
